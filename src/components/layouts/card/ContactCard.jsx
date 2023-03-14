@@ -8,15 +8,17 @@ function ContactCard() {
 
   const handleCommentSubmit = (event) => {
     event.preventDefault();
-    console.log(name, email, comment);
-    return <SuccessModal />;
+    console.log("nama:", name, "Email:", email, "Comment:", comment);
+    setName("");
+    setEmail("");
+    setComment("");
   };
   return (
     <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
       <form onSubmit={handleCommentSubmit} className="card-body">
         <div className="form-control">
           <label htmlFor="name" className="label">
-            <span className="label-text">Username {name}</span>
+            <span className="label-text">Username</span>
           </label>
           <input
             id="name"
@@ -52,12 +54,13 @@ function ContactCard() {
             onChange={(event) => setComment(event.target.value)}
           ></textarea>
         </div>
-        <div className="form-control mt-6">
-          <label htmlFor="my-modal-4" className="btn btn-primary" type="submit">
+        <div className="form-control mt-6 w-full">
+          <button id="my-modal-4" type="submit" className="btn btn-primary">
             Submit
-          </label>
+          </button>
         </div>
       </form>
+      <SuccessModal />
     </div>
   );
 }

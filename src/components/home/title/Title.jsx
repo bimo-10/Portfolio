@@ -1,6 +1,6 @@
 import React from "react";
 
-function TitleHome() {
+function Title() {
   return (
     <div>
       <div className="flex py-12 px-2 font-bold text-4xl text-indigo-700 text-justify md:w-[900px] md:mx-auto md:py-28">
@@ -13,4 +13,4 @@ function TitleHome() {
   );
 }
 
-export default TitleHome;
+export default Title;

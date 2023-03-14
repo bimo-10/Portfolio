@@ -1,28 +1,28 @@
-import space from "./assets/images/Space.png";
-import rating from "./assets/images/Rating.png";
-import parfum from "./assets/images/Document.png";
+import colorFlipper from "./assets/images/color-flipper.png";
+import counterApp from "./assets/images/counter-app.png";
+import simpleCalculator from "./assets/images/simple-calculator.png";
 
 const datas = [
   {
     id: 1,
-    image: space,
-    title: "Space",
-    desc: "If a dog chews shoes whose shoes does he choose?",
-    path: "https://github.com/bimo-10/Space-Tourism_Website-Main.git",
+    image: colorFlipper,
+    title: "Color Flipper",
+    desc: "Color of the whole page changes upon clicking button also shows the color name.",
+    path: "https://color-flipper-react-lilb.netlify.app/",
   },
   {
     id: 2,
-    image: rating,
-    title: "Interactive Rating",
-    desc: "If a cat chews sandals whose shoes does he choose?",
-    path: "https://github.com/bimo-10/interactive-rating-component-main.git",
+    image: counterApp,
+    title: "Counter App",
+    desc: "Change the number when click button increment and decrement. ",
+    path: "https://counter-app-react-lilb.netlify.app/",
   },
   {
     id: 3,
-    image: parfum,
-    title: "Card Component",
-    desc: "If a cat chews sandals whose shoes does he choose?",
-    path: "https://github.com/bimo-10/Product-Preview-Card-Component-Main.git",
+    image: simpleCalculator,
+    title: "Simple Calculator",
+    desc: "Basic calculators can do only addition, subtraction, multiplication and division.",
+    path: "https://simple-calculator-react-lilb.netlify.app/",
   },
 ];
 
